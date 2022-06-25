@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CssCode.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="Container">
+        <form name="form" id="myForm">
+            <input id="DisplayNum" type="text" name="screen" placeholder="0" autocomplete="off">
+            <div class="row">
+                <input type="button" name="AC" value="AC" id="AC" onclick="clean()">
+                <input type="button" name="Rounded" value="R" onclick="MathCal('Rounded')">
+                <input type="button" name="Power" value="^" onclick="MathCal('Power')">
+                <input type="button" name="Radical" value="&radic;" onclick="MathCal('Radical')">
+            </div>
+            <div class="row">
+                <input type="button" name="b7" value="7" onclick="addToCalculator(b7.value)">
+                <input type="button" name="b8" value="8" onclick="addToCalculator(b8.value)">
+                <input type="button" name="b9" value="9" onclick="addToCalculator(b9.value)">
+                <input type="button" name="Division" value="/" onclick="addToCalculator(Division.value)">
+            </div>
+            <div class="row">
+                <input type="button" name="b4" value="4" onclick="addToCalculator(b4.value)">
+                <input type="button" name="b5" value="5" onclick="addToCalculator(b5.value)">
+                <input type="button" name="b6" value="6" onclick="addToCalculator(b6.value)">
+                <input type="button" name="Multiplication" value="*" onclick="addToCalculator(Multiplication.value)">
+            </div>
+            <div class="row">
+                <input type="button" name="b1" value="1" onclick="addToCalculator(b1.value)">
+                <input type="button" name="b2" value="2" onclick="addToCalculator(b2.value)">
+                <input type="button" name="b3" value="3" onclick="addToCalculator(b3.value)">
+                <input type="button" name="Minus" value="-" onclick="addToCalculator(Minus.value)">
+            </div>
+            <div class="row">
+                <input type="button" name="b0" value="0" onclick="addToCalculator(b0.value)">
+                <input type="button" name="Decimal" value="." onclick="addToCalculator(Decimal.value)">
+                <input id="Equal" type="button" name="Equal" value="=" onclick="EqualCalculator()">
+                <input type="button" name="Plus" value="+" onclick="addToCalculator(Plus.value)">
+            </div>
+        </form>
+    </div>
+
+    <script src="./JsCode.js"></script>
+</body>
+</html>

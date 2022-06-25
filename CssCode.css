@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(59, 59, 59);
+}
+.Container {
+  background-color: #fff;
+  width: 350px;
+  height: 500px;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 20px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#DisplayNum {
+  width: 100%;
+  height: 20%;
+  border-radius: 20px;
+  background-color: #fff;
+  color: black;
+  border: 0px;
+  padding: 30px;
+  font-size: 50px;
+}
+#DisplayNum {
+  outline: none;
+}
+input[type="button"] {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 8px;
+  font-size: 30px;
+  background-color: #f1f3f4;
+  color: black;
+  border: none;
+  box-shadow: 0px 0px 31px -12px rgba(255, 255, 255, 0.74);
+  transition: all 0.1s linear;
+}
+.row input:nth-child(4):hover {
+  background-color: black;
+  color: #fff;
+}
+input[type="button"]:hover {
+  color: rgb(219, 219, 219);
+  background-color: black;
+  box-shadow: none;
+}
+.row input:nth-child(4) {
+  background-color: #dadce0;
+}
+.row input:nth-child(4):hover {
+  background-color: black;
+  color: #fff;
+}
+input[type="number"]:focus {
+  outline: none;
+}
+#Equal {
+  background-color: #4285f4;
+  color: #fff;
+}
+#Equal:hover {
+  background-color: #005bee;
+}
+#AC {
+  background-color: #fd4a36;
+  color: #fff;
+}
+#AC:hover {
+  background-color: #fa1900;
+}
